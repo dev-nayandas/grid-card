@@ -1,0 +1,54 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .card-content {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #555;
+  }
+  .card-btn {
+    width: 100%;
+    background-color: rgb(42, 101, 230);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .grid-container {
+        display: grid;
+       grid-template-columns: 100%;
+      }
+  }
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
